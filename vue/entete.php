@@ -1,8 +1,13 @@
 <?php
 session_start();
-if (!isset($_SESSION['user_id'])) {
-    header('Location: login.php');
-    exit();
+
+// Ne pas rediriger si on est sur la page de login
+$current_page = basename($_SERVER['PHP_SELF']);
+if ($current_page != 'login.php') {
+    if (!isset($_SESSION['user_id'])) {
+        header('Location: login.php');
+        exit();
+    }
 }
 include_once '../model/function.php';
 ?>
