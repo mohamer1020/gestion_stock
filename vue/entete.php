@@ -1,8 +1,4 @@
- <?php
-// <!-- require_once '../model/auth.php';
-
-//  Protéger la page
-// protegerPage();
+<?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
     header('Location: login.php');
@@ -77,7 +73,6 @@ include_once '../model/function.php';
             <span class="links_name">Catégorie</span>
           </a>
         </li>
-      <!-- Remplacer le lien de déconnexion existant -->
 <li class="log_out">
     <a href="logout.php">
         <i class="bx bx-log-out"></i>
