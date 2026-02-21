@@ -9,7 +9,8 @@ if ($current_page != 'login.php') {
         exit();
     }
 }
-include_once '../model/function.php';
+// include_once __DIR__ . '/../model/function.php'';
+include_once __DIR__ . '/../model/function.php'';
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
