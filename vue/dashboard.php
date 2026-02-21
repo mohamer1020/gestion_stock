@@ -1,5 +1,4 @@
 <?php
-// include 'entete.php';
 require_once 'entete.php';
 ?>
 <div class="welcome-message">
